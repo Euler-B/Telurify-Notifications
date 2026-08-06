@@ -5,6 +5,7 @@
   "description": "Web push earthquake notifications for Telurify",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
     "start": "node dist/src/main.js",
     "start:dev": "ts-node --transpile-only src/main.ts",
     "test": "jest --runInBand",
