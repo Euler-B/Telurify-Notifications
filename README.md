@@ -33,6 +33,8 @@ no database credentials for Neon.
 
 ## Local development
 
+Requirements: Node.js `24.18.0` or newer and npm.
+
 ```bash
 npm install
 cp .env.example .env
