@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "npm run typecheck",
   "builds": [
     { "src": "api/notify/check.ts", "use": "@vercel/node" }
   ],
