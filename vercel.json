@@ -1,5 +1,6 @@
 {
   "framework": null,
+  "outputDirectory": "public",
   "rewrites": [
     { "source": "/notify/:path*", "destination": "/api/notify/:path*" }
   ]
