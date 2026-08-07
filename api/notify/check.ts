@@ -1,12 +1,11 @@
 import type { Request, Response } from 'express';
 import type { INestApplication } from '@nestjs/common';
-import { createApp } from '../src/app';
+import { createApp } from '../../src/app';
 
 let appPromise: Promise<INestApplication> | undefined;
 
 export default async function handler(req: Request, res: Response) {
-  appPromise ??= createApp();
-  const app = await appPromise;
+  const app = await (appPromise ??= createApp());
   const expressApp = app.getHttpAdapter().getInstance();
 
   // Vercel mounts this function below /api; Nest routes stay identical

@@ -56,7 +56,7 @@ Dependabot provide additional security and dependency maintenance.
 ## Vercel and cron-job.org
 
 Deploy the repository as a Vercel project. The `vercel.json` rewrite exposes
-`/notify/check` through the `api/index.ts` serverless handler. Configure all
+`/notify/check` through the `api/notify/check.ts` serverless handler. Configure all
 variables from `.env.example` in Vercel, then configure cron-job.org with:
 
 ```text
