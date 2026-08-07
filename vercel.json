@@ -1,11 +1,7 @@
 {
   "version": 2,
   "buildCommand": "npm run typecheck",
-  "builds": [
-    { "src": "api/notify/check.ts", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/notify/check", "dest": "/api/notify/check.ts" },
-    { "src": "/api/notify/check", "dest": "/api/notify/check.ts" }
+  "rewrites": [
+    { "source": "/notify/check", "destination": "/api/notify/check" }
   ]
 }
