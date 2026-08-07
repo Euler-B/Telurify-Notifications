@@ -1,10 +1,6 @@
 {
-  "functions": {
-    "api/index.ts": {
-      "runtime": "nodejs24.x"
-    }
-  },
+  "framework": null,
   "rewrites": [
     { "source": "/notify/:path*", "destination": "/api/notify/:path*" }
-  }
+  ]
 }
